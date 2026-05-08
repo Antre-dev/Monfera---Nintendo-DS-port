@@ -1,46 +1,22 @@
-/*---------------------------------------------------------------------------------
-
-	$Id: main.cpp,v 1.13 2008-12-02 20:21:20 dovoto Exp $
-
-	Simple console print demo
-	-- dovoto
-
-
----------------------------------------------------------------------------------*/
 #include <nds.h>
-
 #include <stdio.h>
 
-static volatile int frame = 0;
+#include "player.h"
 
-//---------------------------------------------------------------------------------
-// VBlank interrupt handler. This function is executed in IRQ mode - be careful!
-//---------------------------------------------------------------------------------
-static void Vblank() {
-//---------------------------------------------------------------------------------
-	frame++;
-}
-
-//---------------------------------------------------------------------------------
 int main(void) {
-//---------------------------------------------------------------------------------
-	touchPosition touchXY;
-	irqSet(IRQ_VBLANK, Vblank);
-	consoleDemoInit();
-	iprintf("      Hello world fellas\n");
-	while(pmMainLoop()) {
-		swiWaitForVBlank();
-		scanKeys();
-		int keys = keysDown();
-		if (keys & KEY_START) break;
 
-		touchRead(&touchXY);
-		
-		iprintf("\x1b[10;0HFrame = %d",frame);
-		iprintf("\x1b[16;0HTouch x = %04X, %04X\n", touchXY.rawx, touchXY.px);
-		iprintf("Touch y = %04X, %04X\n", touchXY.rawy, touchXY.py);
+    consoleDemoInit();
 
-	}
+    initPlayer();
 
-	return 0;
+    while(1) {
+
+        updatePlayer();
+
+        drawPlayer();
+
+        swiWaitForVBlank();
+    }
+
+    return 0;
 }
