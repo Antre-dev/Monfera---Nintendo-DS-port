@@ -1,0 +1,4 @@
+#define SFX_MAIN_THEME_SONG_8	0
+#define MSL_NSONGS	0
+#define MSL_NSAMPS	1
+#define MSL_BANKSIZE	1

@@ -111,7 +111,11 @@ main.o: C:/Users/awrze/Documents/projects/monfera_nds/source/main.cpp \
  C:/devkitPro/libnds/include/nds/arm9/trig_lut.h \
  C:/devkitPro/libnds/include/nds/arm9/video.h \
  C:/devkitPro/libnds/include/nds/arm9/videoGL.h \
- C:/Users/awrze/Documents/projects/monfera_nds/include/player.h
+ C:/Users/awrze/Documents/projects/monfera_nds/include/player.h \
+ C:/devkitPro/libnds/include/maxmod9.h \
+ C:/devkitPro/libnds/include/mm_types.h \
+ C:/Users/awrze/Documents/projects/monfera_nds/data/soundbank.h \
+ C:/Users/awrze/Documents/projects/monfera_nds/build/soundbank_bin.h
 C:/devkitPro/libnds/include/nds.h:
 C:/devkitPro/calico/include/calico.h:
 C:/devkitPro/calico/include/calico/types.h:
@@ -226,3 +230,7 @@ C:/devkitPro/libnds/include/nds/arm9/trig_lut.h:
 C:/devkitPro/libnds/include/nds/arm9/video.h:
 C:/devkitPro/libnds/include/nds/arm9/videoGL.h:
 C:/Users/awrze/Documents/projects/monfera_nds/include/player.h:
+C:/devkitPro/libnds/include/maxmod9.h:
+C:/devkitPro/libnds/include/mm_types.h:
+C:/Users/awrze/Documents/projects/monfera_nds/data/soundbank.h:
+C:/Users/awrze/Documents/projects/monfera_nds/build/soundbank_bin.h:
