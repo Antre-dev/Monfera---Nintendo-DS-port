@@ -5,11 +5,15 @@
 #include <maxmod9.h>
 #include "soundbank.h"
 #include "soundbank_bin.h"
+#include "npc.h"
 
 int main(void)
 {
     consoleDemoInit();
-
+    videoSetMode(MODE_0_2D);
+    vramSetBankA(VRAM_A_MAIN_SPRITE);
+    oamInit(&oamMain, SpriteMapping_1D_32, false);
+    initNPC();
     initPlayer();
     mmInitDefaultMem((mm_addr)soundbank_bin);
     mmSelectMode(MM_MODE_A);
@@ -25,6 +29,8 @@ int main(void)
     {
         updatePlayer();
         drawPlayer();
+        drawNPC();
+        oamUpdate(&oamMain);
         swiWaitForVBlank();
     }
 

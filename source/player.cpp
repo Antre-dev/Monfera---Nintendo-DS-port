@@ -22,25 +22,19 @@ enum Direction
 
 static Direction dir = DOWN;
 
-void initPlayer()
-{
-    videoSetMode(MODE_0_2D);
-    vramSetBankA(VRAM_A_MAIN_SPRITE);
-    oamInit(&oamMain, SpriteMapping_1D_32, false);
-
+void initPlayer() {
     gfxDown = oamAllocateGfx(&oamMain, SpriteSize_16x16, SpriteColorFormat_256Color);
-    gfxUp = oamAllocateGfx(&oamMain, SpriteSize_16x16, SpriteColorFormat_256Color);
+    gfxUp   = oamAllocateGfx(&oamMain, SpriteSize_16x16, SpriteColorFormat_256Color);
     gfxRight = oamAllocateGfx(&oamMain, SpriteSize_16x16, SpriteColorFormat_256Color);
-    gfxLeft = oamAllocateGfx(&oamMain, SpriteSize_16x16, SpriteColorFormat_256Color);
+    gfxLeft  = oamAllocateGfx(&oamMain, SpriteSize_16x16, SpriteColorFormat_256Color);
 
-    dmaCopy(player_sprite_downTiles, gfxDown, player_sprite_downTilesLen);
-    dmaCopy(player_sprite_upTiles, gfxUp, player_sprite_upTilesLen);
+    dmaCopy(player_sprite_downTiles,  gfxDown,  player_sprite_downTilesLen);
+    dmaCopy(player_sprite_upTiles,    gfxUp,    player_sprite_upTilesLen);
     dmaCopy(player_sprite_rightTiles, gfxRight, player_sprite_rightTilesLen);
-    dmaCopy(player_sprite_leftTiles, gfxLeft, player_sprite_leftTilesLen);
+    dmaCopy(player_sprite_leftTiles,  gfxLeft,  player_sprite_leftTilesLen);
 
     dmaCopy(player_sprite_downPal, SPRITE_PALETTE, player_sprite_downPalLen);
 }
-
 void updatePlayer()
 {
     scanKeys();
@@ -100,6 +94,4 @@ void drawPlayer()
         gfx,
         -1,
         false, false, false, false, false);
-
-    oamUpdate(&oamMain);
 }
