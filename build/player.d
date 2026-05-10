@@ -112,6 +112,7 @@ player.o: C:/Users/awrze/Documents/projects/monfera_nds/source/player.cpp \
  C:/devkitPro/libnds/include/nds/arm9/video.h \
  C:/devkitPro/libnds/include/nds/arm9/videoGL.h \
  C:/Users/awrze/Documents/projects/monfera_nds/include/player.h \
+ C:/Users/awrze/Documents/projects/monfera_nds/include/gamestate.h \
  C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_up.h \
  C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_down.h \
  C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_left.h \
@@ -230,6 +231,7 @@ C:/devkitPro/libnds/include/nds/arm9/trig_lut.h:
 C:/devkitPro/libnds/include/nds/arm9/video.h:
 C:/devkitPro/libnds/include/nds/arm9/videoGL.h:
 C:/Users/awrze/Documents/projects/monfera_nds/include/player.h:
+C:/Users/awrze/Documents/projects/monfera_nds/include/gamestate.h:
 C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_up.h:
 C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_down.h:
 C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_left.h:

@@ -111,11 +111,14 @@ npc.o: C:/Users/awrze/Documents/projects/monfera_nds/source/npc.cpp \
  C:/devkitPro/libnds/include/nds/arm9/trig_lut.h \
  C:/devkitPro/libnds/include/nds/arm9/video.h \
  C:/devkitPro/libnds/include/nds/arm9/videoGL.h \
- C:/Users/awrze/Documents/projects/monfera_nds/include/player.h \
+ C:/Users/awrze/Documents/projects/monfera_nds/include/npc.h \
  C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_up.h \
  C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_down.h \
  C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_left.h \
- C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_right.h
+ C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_right.h \
+ C:/Users/awrze/Documents/projects/monfera_nds/include/player.h \
+ C:/Users/awrze/Documents/projects/monfera_nds/include/gamestate.h \
+ C:/Users/awrze/Documents/projects/monfera_nds/include/dialog.h
 C:/devkitPro/libnds/include/nds.h:
 C:/devkitPro/calico/include/calico.h:
 C:/devkitPro/calico/include/calico/types.h:
@@ -229,8 +232,11 @@ C:/devkitPro/libnds/include/nds/arm9/sprite.h:
 C:/devkitPro/libnds/include/nds/arm9/trig_lut.h:
 C:/devkitPro/libnds/include/nds/arm9/video.h:
 C:/devkitPro/libnds/include/nds/arm9/videoGL.h:
-C:/Users/awrze/Documents/projects/monfera_nds/include/player.h:
+C:/Users/awrze/Documents/projects/monfera_nds/include/npc.h:
 C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_up.h:
 C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_down.h:
 C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_left.h:
 C:/Users/awrze/Documents/projects/monfera_nds/data/player_sprite_right.h:
+C:/Users/awrze/Documents/projects/monfera_nds/include/player.h:
+C:/Users/awrze/Documents/projects/monfera_nds/include/gamestate.h:
+C:/Users/awrze/Documents/projects/monfera_nds/include/dialog.h:

@@ -6,9 +6,12 @@
 #include "soundbank.h"
 #include "soundbank_bin.h"
 #include "npc.h"
+#include "gamestate.h"
+#include "dialog.h"
 
 int main(void)
 {
+    GameState state = STATE_EXPLORE;
     consoleDemoInit();
     videoSetMode(MODE_0_2D);
     vramSetBankA(VRAM_A_MAIN_SPRITE);
@@ -27,9 +30,19 @@ int main(void)
 
     while (1)
     {
-        updatePlayer();
+        scanKeys();
+        if (state == STATE_EXPLORE)
+        {
+            updatePlayer();
+            checkNPCInteraction(state);
+        }
+        else if (state == STATE_DIALOG)
+        {
+            updateDialog(state);
+        }
         drawPlayer();
         drawNPC();
+        drawDialog();
         oamUpdate(&oamMain);
         swiWaitForVBlank();
     }

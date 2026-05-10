@@ -6,9 +6,10 @@
 #include "player_sprite_down.h"
 #include "player_sprite_left.h"
 #include "player_sprite_right.h"
+#include "gamestate.h"
 
-static int playerX = 100;
-static int playerY = 80;
+int playerX = 100;
+int playerY = 80;
 
 static u16 *gfxUp, *gfxDown, *gfxLeft, *gfxRight;
 
@@ -37,7 +38,6 @@ void initPlayer() {
 }
 void updatePlayer()
 {
-    scanKeys();
     int keys = keysHeld();
 
     if (keys & KEY_LEFT)

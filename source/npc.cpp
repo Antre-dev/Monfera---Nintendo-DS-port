@@ -1,16 +1,24 @@
 #include <nds.h>
 #include <stdio.h>
 
-#include "player.h"
+#include "npc.h"
 #include "player_sprite_up.h"
 #include "player_sprite_down.h"
 #include "player_sprite_left.h"
 #include "player_sprite_right.h"
+#include "player.h"
+#include "gamestate.h"
+#include "dialog.h"
 
-static int playerX = 100;
-static int playerY = 80;
-
+int npcX = 80;
+int npcY = 60;
 static u16 *gfxUp, *gfxDown, *gfxLeft, *gfxRight;
+static const char* npcDialog[] = {
+    "Yo sup.",
+    "Welcome to Monfera.",
+    "I love hackclub."
+};
+static const int npcDialogLen = 3;
 
 void initNPC()
 {
@@ -27,6 +35,18 @@ void initNPC()
     dmaCopy(player_sprite_downPal, SPRITE_PALETTE, player_sprite_downPalLen);
 }
 
+bool isNearNPC() {
+    int dx= playerX - npcX;
+    int dy = playerY - npcY;
+    return (dx*dx + dy*dy) < (24*24);
+}
+void checkNPCInteraction(GameState &state) {
+    if (isNearNPC() && (keysDown() & KEY_A)) {
+        startDialog(npcDialog, npcDialogLen);
+        state = STATE_DIALOG;
+    }
+}
+
 void drawNPC()
 {
     u16 *gfx;
@@ -35,8 +55,8 @@ void drawNPC()
     oamSet(
         &oamMain,
         1,
-        playerX,
-        playerY,
+        npcX,
+        npcY,
         0,
         0,
         SpriteSize_16x16,

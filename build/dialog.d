@@ -1,4 +1,6 @@
-main.o: C:/Users/awrze/Documents/projects/monfera_nds/source/main.cpp \
+dialog.o: C:/Users/awrze/Documents/projects/monfera_nds/source/dialog.cpp \
+ C:/Users/awrze/Documents/projects/monfera_nds/include/dialog.h \
+ C:/Users/awrze/Documents/projects/monfera_nds/include/gamestate.h \
  C:/devkitPro/libnds/include/nds.h C:/devkitPro/calico/include/calico.h \
  C:/devkitPro/calico/include/calico/types.h \
  C:/devkitPro/calico/include/calico/arm/psr.h \
@@ -110,15 +112,9 @@ main.o: C:/Users/awrze/Documents/projects/monfera_nds/source/main.cpp \
  C:/devkitPro/libnds/include/nds/arm9/sprite.h \
  C:/devkitPro/libnds/include/nds/arm9/trig_lut.h \
  C:/devkitPro/libnds/include/nds/arm9/video.h \
- C:/devkitPro/libnds/include/nds/arm9/videoGL.h \
- C:/Users/awrze/Documents/projects/monfera_nds/include/player.h \
- C:/Users/awrze/Documents/projects/monfera_nds/include/gamestate.h \
- C:/devkitPro/libnds/include/maxmod9.h \
- C:/devkitPro/libnds/include/mm_types.h \
- C:/Users/awrze/Documents/projects/monfera_nds/data/soundbank.h \
- C:/Users/awrze/Documents/projects/monfera_nds/data/soundbank_bin.h \
- C:/Users/awrze/Documents/projects/monfera_nds/include/npc.h \
- C:/Users/awrze/Documents/projects/monfera_nds/include/dialog.h
+ C:/devkitPro/libnds/include/nds/arm9/videoGL.h
+C:/Users/awrze/Documents/projects/monfera_nds/include/dialog.h:
+C:/Users/awrze/Documents/projects/monfera_nds/include/gamestate.h:
 C:/devkitPro/libnds/include/nds.h:
 C:/devkitPro/calico/include/calico.h:
 C:/devkitPro/calico/include/calico/types.h:
@@ -232,11 +228,3 @@ C:/devkitPro/libnds/include/nds/arm9/sprite.h:
 C:/devkitPro/libnds/include/nds/arm9/trig_lut.h:
 C:/devkitPro/libnds/include/nds/arm9/video.h:
 C:/devkitPro/libnds/include/nds/arm9/videoGL.h:
-C:/Users/awrze/Documents/projects/monfera_nds/include/player.h:
-C:/Users/awrze/Documents/projects/monfera_nds/include/gamestate.h:
-C:/devkitPro/libnds/include/maxmod9.h:
-C:/devkitPro/libnds/include/mm_types.h:
-C:/Users/awrze/Documents/projects/monfera_nds/data/soundbank.h:
-C:/Users/awrze/Documents/projects/monfera_nds/data/soundbank_bin.h:
-C:/Users/awrze/Documents/projects/monfera_nds/include/npc.h:
-C:/Users/awrze/Documents/projects/monfera_nds/include/dialog.h:
