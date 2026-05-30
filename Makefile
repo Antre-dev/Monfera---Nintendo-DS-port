@@ -2,8 +2,18 @@
 .SUFFIXES:
 #---------------------------------------------------------------------------------
 
+# Try to detect devkitPro/devkitARM if not set by environment.
+# Default DEVKITPRO to /opt/devkitpro when unset.
+ifeq ($(strip $(DEVKITPRO)),)
+DEVKITPRO := /opt/devkitpro
+endif
+
 ifeq ($(strip $(DEVKITARM)),)
+ifneq ($(wildcard $(DEVKITPRO)/devkitARM),)
+DEVKITARM := $(DEVKITPRO)/devkitARM
+else
 $(error "Please set DEVKITARM in your environment. export DEVKITARM=<path to>devkitARM")
+endif
 endif
 
 include $(DEVKITARM)/ds_rules
@@ -117,6 +127,10 @@ $(OUTPUT).elf	:	$(OFILES)
 	@echo $(notdir $<)
 	$(bin2o)
 
+
+# Remove any stale dependency files (e.g., Windows-generated with drive letters)
+# This runs during parse time so the subsequent include won't choke on bad paths.
+$(shell if [ -d $(DEPSDIR) ]; then rm -f $(DEPSDIR)/*.d 2>/dev/null || true; fi)
 
 -include $(DEPENDS)
 

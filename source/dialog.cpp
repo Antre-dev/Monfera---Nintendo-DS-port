@@ -1,4 +1,4 @@
-#include "dialog.h"
+#
 #include <stdio.h>
 #include <nds.h>
 #include "gamestate.h"
