@@ -14,9 +14,8 @@ int npcX = 80;
 int npcY = 60;
 static u16 *gfxUp, *gfxDown, *gfxLeft, *gfxRight;
 static const char* npcDialog[] = {
-    "Yo sup.",
-    "Welcome to Monfera.",
-    "I love hackclub."
+    "Hey, im dr.Monfera.I created monferas",
+    "Go outside and explore the world and then comeback to me!"
 };
 static const int npcDialogLen = 3;
 
