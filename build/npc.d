@@ -1,5 +1,5 @@
-main.o: \
- /home/antre/Documents/projects/Monfera---Nintendo-DS-port/source/main.cpp \
+npc.o: \
+ /home/antre/Documents/projects/Monfera---Nintendo-DS-port/source/npc.cpp \
  /opt/devkitpro/libnds/include/nds.h \
  /opt/devkitpro/calico/include/calico.h \
  /opt/devkitpro/calico/include/calico/types.h \
@@ -113,13 +113,13 @@ main.o: \
  /opt/devkitpro/libnds/include/nds/arm9/trig_lut.h \
  /opt/devkitpro/libnds/include/nds/arm9/video.h \
  /opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
+ /home/antre/Documents/projects/Monfera---Nintendo-DS-port/include/npc.h \
+ /home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/player_sprite_up.h \
+ /home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/player_sprite_down.h \
+ /home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/player_sprite_left.h \
+ /home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/player_sprite_right.h \
  /home/antre/Documents/projects/Monfera---Nintendo-DS-port/include/player.h \
  /home/antre/Documents/projects/Monfera---Nintendo-DS-port/include/gamestate.h \
- /opt/devkitpro/libnds/include/maxmod9.h \
- /opt/devkitpro/libnds/include/mm_types.h \
- /home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/soundbank.h \
- /home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/soundbank_bin.h \
- /home/antre/Documents/projects/Monfera---Nintendo-DS-port/include/npc.h \
  /home/antre/Documents/projects/Monfera---Nintendo-DS-port/include/dialog.h
 /opt/devkitpro/libnds/include/nds.h:
 /opt/devkitpro/calico/include/calico.h:
@@ -234,11 +234,11 @@ main.o: \
 /opt/devkitpro/libnds/include/nds/arm9/trig_lut.h:
 /opt/devkitpro/libnds/include/nds/arm9/video.h:
 /opt/devkitpro/libnds/include/nds/arm9/videoGL.h:
+/home/antre/Documents/projects/Monfera---Nintendo-DS-port/include/npc.h:
+/home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/player_sprite_up.h:
+/home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/player_sprite_down.h:
+/home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/player_sprite_left.h:
+/home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/player_sprite_right.h:
 /home/antre/Documents/projects/Monfera---Nintendo-DS-port/include/player.h:
 /home/antre/Documents/projects/Monfera---Nintendo-DS-port/include/gamestate.h:
-/opt/devkitpro/libnds/include/maxmod9.h:
-/opt/devkitpro/libnds/include/mm_types.h:
-/home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/soundbank.h:
-/home/antre/Documents/projects/Monfera---Nintendo-DS-port/data/soundbank_bin.h:
-/home/antre/Documents/projects/Monfera---Nintendo-DS-port/include/npc.h:
 /home/antre/Documents/projects/Monfera---Nintendo-DS-port/include/dialog.h:

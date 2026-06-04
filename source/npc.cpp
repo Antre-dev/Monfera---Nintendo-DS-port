@@ -17,7 +17,7 @@ static const char* npcDialog[] = {
     "Hey, im dr.Monfera.I created monferas",
     "Go outside and explore the world and then comeback to me!"
 };
-static const int npcDialogLen = 3;
+static const int npcDialogLen = 2;
 
 void initNPC()
 {
