@@ -235,8 +235,8 @@
 0200b824 00000056 T __aeabi_lmul
 0200b824 00000056 T __muldi3
 0200b87c T _fini
-0200b888 00000008 t ____aeabi_idiv0_from_arm
-0200b890 00000008 t ____aeabi_ldiv0_from_arm
+0200b888 00000008 t ____aeabi_ldiv0_from_arm
+0200b890 00000008 t ____aeabi_idiv0_from_arm
 0200b898 T soundbank_bin
 020f5ec4 T soundbank_bin_end
 020f5fcc 00000200 T player_sprite_downPal
