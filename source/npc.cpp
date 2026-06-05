@@ -11,7 +11,7 @@
 #include "dialog.h"
 
 int npcX = 80;
-int npcY = 60;
+int npcY = 120;
 static u16 *gfxUp, *gfxDown, *gfxLeft, *gfxRight;
 static const char* npcDialog[] = {
     "Hey, im dr.Monfera.I created monferas",
